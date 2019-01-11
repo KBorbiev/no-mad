@@ -1,0 +1,63 @@
+.header
+    &__top
+        background-color $orange
+        padding 24px 0 12px 0
+        margin 0 0 24px 0
+    &__address
+        display inline-block
+    &__share
+        float right
+    &__bottom
+        margin 0 0 17px 0
+    &__left
+    &__right
+        display inline-block
+        vertical-align top
+    &__logo
+        width 350px
+    &__right
+        float right
+    &__menu
+        padding 20px 0 0
+.top-address
+    font-size 0
+    li
+        display inline-block
+        margin-right 24px
+        &:last-child
+            margin-right 0
+    &__link
+        display block
+        padding-left 28px
+        font-size 16px
+        color $white
+        position relative
+        &:hover
+            text-decoration underline
+        &::before
+            content '';
+            display block
+            position absolute
+            top 0
+            left 0
+            width 24px
+            height 24px
+            z-index 1
+        &.call
+            &::before
+                background url('../img/phone.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+        &.address
+            &::before
+                background url('../img/flags.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+        &.letter
+            &::before
+                background url('../img/massage.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+
+
+

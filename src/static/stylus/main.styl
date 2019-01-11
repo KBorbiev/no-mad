@@ -1,0 +1,267 @@
+// ====== Базовые подключения
+@import 'components/_base/_variables'
+@import 'components/_base/_mixins'
+
+@import 'components/_base/page'
+
+// ====== Все компоненты
+@import 'components/*'
+
+// ====== Вёрстка
+
+.logo
+    width 100%
+    img
+        display block
+        width 100%
+
+/*!
+Делает в одну строку
+*/
+.social-share
+    &.inline .ya-share2__item
+        display inline-block
+        vertical-align top
+        margin-right 12px
+        &:last-child
+            margin-right 0
+/*!
+Стили для социальных иконок
+*/
+.ya-share2__item
+    font-size 0
+    width 24px
+    height 24px
+    cursor pointer
+    &_service
+        &_facebook
+            background url('../img/sprites.png') -10px -10px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -98px -54px no-repeat
+        &_twitter
+            // width 23px
+            // height 23px
+            background url('../img/sprites.png') -53px -98px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -98px -10px no-repeat
+        &_whatsapp
+            // width 23px
+            // height 23px
+            background url('../img/sprites.png') -142px -53px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -142px -96px no-repeat
+        &_vkontakte
+            // width 23px
+            // height 23px
+            background url('../img/sprites.png') -96px -98px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -142px -10px no-repeat
+        &_odnoklassniki
+            // width 24px
+            // height 24px
+            background url('../img/sprites.png') -54px -10px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -10px -54px no-repeat
+        &_telegram
+            // width 24px
+            // height 24px
+            background url('../img/sprites.png') -54px -54px no-repeat
+            &:hover
+                background: url('../img/sprites.png') -10px -98px no-repeat
+
+.main-slider
+    margin-bottom 50px
+    &__item
+        position relative
+        height 600px
+        width 100%
+        & img
+            width 100%
+            height 100%
+            display block
+            object-fit cover
+            position absolute
+            top 0
+            left 0
+            z-index 1
+    &__info
+        position absolute
+        left 20%
+        bottom 3px
+        font-size 0
+        z-index 2
+        background-color rgba(248, 248, 248, 0.60)
+        padding 20px 32px
+        max-width 650px
+    &__title
+        font-size 32px
+        font-weight 500
+        text-transform uppercase
+        text-decoration underline
+        margin-bottom 12px
+    &__text
+        font-size 18px
+        margin-bottom 6px
+/*!
+    Стлизация Dots
+*/
+.main-slider .owl-theme .owl-dots .owl-dot span
+    width 20px
+    height 15px
+
+
+.hero-info
+    margin-bottom 80px
+    &__title
+        font-size 38px
+        font-weight 500
+        text-align center
+        margin-bottom 12px
+    &__description
+        font-size 18px
+        line-height 1.7
+        text-align center
+
+.our-team
+    margin-bottom 50px
+    &__title
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+    &__list
+        font-size 0
+        margin 0 -10px
+        text-align center
+    &__item
+        display inline-block
+        width 24%
+        margin 0 5px 12px
+        overflow hidden
+        position relative
+        &:hover .our-team__phone-email
+            left 0
+    &__image
+        & img
+            width 100%
+            display block
+    &__block-info
+        padding-top 12px
+        padding-bottom 12px
+        background-color $white
+        text-align center
+    &__name
+        font-size 17px
+        margin-bottom 6px
+    &__info
+        text-transform uppercase
+        font-size 16px
+    &__phone-email
+        position absolute
+        top 0
+        left -100%
+        width 100%
+        height 100%
+        padding-top 50%
+        z-index 1
+        background-color rgba(248,248,248,.8)
+        transition left $time
+    &__phone
+        margin-bottom 15px
+    &__phone
+    &__email
+        display block
+        font-size 20px
+        &:hover
+            text-decoration underline
+
+
+/*!
+    Video slider
+*/
+.our-video
+    margin-bottom 50px
+    &__title
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+    &__item
+        height 325px
+    &__link + span
+        display none
+
+.owl-video-tn
+    background-size cover !important
+
+.our-advantages
+    margin-bottom 50px
+    &__title
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+    &__list
+        font-size 0
+        margin 0 -10px
+    &__grid-item
+        display inline-block
+        width 24%
+        margin 0 5px 12px
+        vertical-align top
+    &__item
+        border-bottom 1px solid
+        margin-bottom 25px
+    &__image
+        text-align center
+        margin-bottom 12px
+    &__info-block-mini
+        margin-bottom 12px
+    &__open
+        font-family "oswald"
+        outline 0
+        border 0
+        cursor pointer
+        background-color $yellow
+        font-size 16px
+        padding 4px 6px
+        margin-bottom 12px
+        margin-left 12px
+    &__info-block-full
+        overflow hidden
+    &__info-mini
+        padding 0 12px
+        font-size 16px
+    &__info
+        padding 0 12px
+        font-size 16px
+        margin-top -9999px
+        transition all $time
+.our-advantages__item.is-opened .our-advantages__info
+    margin-top 0 !important
+
+.tours
+    &__title
+        text-transform uppercase
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+    &__list
+        // 
+    &__item
+        // 
+    &__image
+        // 
+    &__info
+        // 
+    &__open-full
+        font-family "oswald"
+        outline 0
+        border 0
+        cursor pointer
+        background-color $yellow
+        font-size 16px
+        padding 4px 6px
+        margin-bottom 12px
+        margin-left 12px

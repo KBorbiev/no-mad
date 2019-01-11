@@ -1,0 +1,321 @@
+extends template/wide.pug
+block page-title
+    title Services
+
+block main
+    +b.main-slider
+        .owl-carousel.owl-theme
+            +e.item
+                img(src="img/slider-img.jpg", alt="image")
+                +e.info
+                    +e.H2.title Horseback riding
+                    +e.P.text
+                        | I'm Nomad invites you to discover Kyrgyzstan
+                        | just as the ancient Kyrgyz peoples once did, on horseback!
+            +e.item
+                img(src="img/slider-img.jpg", alt="image")
+                +e.info
+                    +e.H2.title Horseback riding
+                    +e.P.text
+                        | I'm Nomad invites you to discover Kyrgyzstan
+                        | just as the ancient Kyrgyz peoples once did, on horseback!
+            +e.item
+                img(src="img/slider-img.jpg", alt="image")
+                +e.info
+                    +e.H2.title Horseback riding
+                    +e.P.text
+                        | I'm Nomad invites you to discover Kyrgyzstan
+                        | just as the ancient Kyrgyz peoples once did, on horseback!
+            +e.item
+                img(src="img/slider-img.jpg", alt="image")
+                +e.info
+                    +e.H2.title Horseback riding
+                    +e.P.text
+                        | I'm Nomad invites you to discover Kyrgyzstan
+                        | just as the ancient Kyrgyz peoples once did, on horseback!
+            +e.item
+                img(src="img/slider-img.jpg", alt="image")
+                +e.info
+                    +e.H2.title Horseback riding
+                    +e.P.text
+                        | I'm Nomad invites you to discover Kyrgyzstan
+                        | just as the ancient Kyrgyz peoples once did, on horseback!
+
+    +b.SECTION.hero-info
+        +e.wpapper.wrapper
+            +e.H3.title Welcome to Kyrgyzstan, the Empire of Nomads!
+            +e.P.description
+                | I’m Nomad invites you to discover Kyrgyzstan, an unexplored country
+                | along the great Silk Road that offers many opportunities for outdoor
+                | enthusiasts. Kyrgyz people, known from ancient times for their hospitality,
+                | will greet you throughout your stay. Our professional staff act as your
+                | guides as you discover the country’s unique culture and traditions.I’m Nomad
+                | offers such activities as trekking, horseback riding, bicycle and motorcycle
+                | tours and skiing in winter. We customize our tours for unforgettable
+                | adventures in the land of nomads. 
+
+    +b.SECTION.our-team
+        +e.wrapper.wrapper
+            +e.H4.title Our Team
+            +e.list
+                +e.item
+                    +e.image
+                        img(src="img/guide-man.jpg", alt="img")
+                    +e.block-info
+                        +e.P.name Kairat Borbiev
+                        +e.P.info Guide/Manager
+                    +e.phone-email
+                        +e.A(href='tel:0777-77-77-77').phone Phone: 0777-77-77-77
+                        +e.A(href='mailto: admin@admin.kg').email E-mail: admin@admin.kg
+                +e.item
+                    +e.image
+                        img(src="img/guide-man.jpg", alt="img")
+                    +e.block-info
+                        +e.P.name Kairat Borbiev
+                        +e.P.info Guide/Manager
+                    +e.phone-email
+                        +e.A(href='tel:0777-77-77-77').phone Phone: 0777-77-77-77
+                        +e.A(href='mailto: admin@admin.kg').email E-mail: admin@admin.kg
+                +e.item
+                    +e.image
+                        img(src="img/guide-man.jpg", alt="img")
+                    +e.block-info
+                        +e.P.name Kairat Borbiev
+                        +e.P.info Guide/Manager
+                    +e.phone-email
+                        +e.A(href='tel:0777-77-77-77').phone Phone: 0777-77-77-77
+                        +e.A(href='mailto: admin@admin.kg').email E-mail: admin@admin.kg
+                +e.item
+                    +e.image
+                        img(src="img/guide-man.jpg", alt="img")
+                    +e.block-info
+                        +e.P.name Kairat Borbiev
+                        +e.P.info Guide/Manager
+                    +e.phone-email
+                        +e.A(href='tel:0777-77-77-77').phone Phone: 0777-77-77-77
+                        +e.A(href='mailto: admin@admin.kg').email E-mail: admin@admin.kg
+
+    +b.SECTION.our-video
+        +e.wrapper.wrapper
+            +e.H4.title Watch video
+            .owl-carousel.owl-theme.js-video-slide
+                +e.item.item-video
+                    +e.A(href='https://www.youtube.com/embed/A4pmZ45BY1I').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/lM02vNMRRB0').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/hjujTTRB01E').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/ftlvreFtA2A').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/rN6nlNC9WQA').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/RK1K2bCg4J8').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/eKFTSSKCzWA').link.owl-video
+                +e.item.item-video
+                    +e.A(href='https://youtu.be/Bey4XXJAqS8').link.owl-video
+
+    +b.SECTION.our-advantages
+        +e.wrapper.wrapper
+            +e.H4.title OUR ADVANTAGES:
+            +e.list
+                +e.grid
+                    +e.grid-item
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                    +e.grid-item
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                    +e.grid-item
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                    +e.grid-item
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+                        +e.item
+                            +e.image
+                                img(src="img/ico.png", alt="image")
+                            +e.info-block-mini
+                                +e.P.info-mini
+                                    | Далеко-далеко за словесными горами в стране,
+                                    | гласных и согласных живут рыбные тексты.
+                            +e.BUTTON.open.js-info-trigger Читать дальше...
+                            +e.info-block-full
+                                +e.P.info.js-slide-info
+                                     | Далеко-далеко за словесными горами в стране,
+                                     | гласных и согласных живут рыбные тексты. Дорогу
+                                     | переулка переписали меня дал маленький коварный
+                                     | прямо большой. Текстов это, то пояс всемогущая
+                                     | обеспечивает переписали собрал запятых меня,
+                                     | лучше, послушавшись, свой осталось приставка
+                                     | домах правилами даль. Подпоясал курсивных,
+                                     | океана сбить послушавшись скатился до мир,
+                                     | толку дал имени встретил необходимыми заманивший,
+                                     | всеми проектах безопасную власти.
+
+    +b.SECTION.tours
+        +e.wrapper.wrapper
+            +e.H4.title RECOMMANDATION OF TOURS, ACTIVITIES & DESTINATIONS BY SEASON
+            +e.list
+                +e.item
+                    +e.image
+                        img(src="", alt="image")
+                    +e.P.info Spring time
+                    +e.BUTTON.open-full Больше информации
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
