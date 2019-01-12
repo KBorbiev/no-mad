@@ -227,6 +227,9 @@
         padding 4px 6px
         margin-bottom 12px
         margin-left 12px
+        transition background $time
+        &:hover
+            background-color $white
     &__info-block-full
         overflow hidden
     &__info-mini
@@ -241,6 +244,7 @@
     margin-top 0 !important
 
 .tours
+    margin-bottom 50px
     &__title
         text-transform uppercase
         text-align center
@@ -248,13 +252,23 @@
         font-size 34px
         margin-bottom 25px
     &__list
-        // 
+        margin 0 -30px
+        font-size 0
+        text-align center
     &__item
-        // 
-    &__image
-        // 
+        display inline-block
+        vertical-align top
+        margin 0 15px 12px
+        width 22%
+    &__image img
+        width 100%
+        display block
+        object-fit cover
     &__info
-        // 
+        font-size 16px
+        text-align center
+        padding 12px 0 0 0
+        margin-bottom 6px
     &__open-full
         font-family "oswald"
         outline 0
@@ -263,5 +277,53 @@
         background-color $yellow
         font-size 16px
         padding 4px 6px
-        margin-bottom 12px
-        margin-left 12px
+        width 100%
+        transition background $time
+        &:hover
+            background-color $white
+
+.about-kyrgyzstan
+    background url('../img/kyrgyzstan.jpg') 50% no-repeat
+    min-height 520px
+    max-height 650px
+    margin-bottom 50px
+    position relative
+    &__info-box
+        padding-top 45px
+        color $white
+    &__title
+        text-transform uppercase
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+        letter-spacing .5em
+    &__info
+        font-size 16px
+        text-align center
+    &__open
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        font-family "oswald"
+        outline 0
+        border 0
+        cursor pointer
+        background-color $yellow
+        font-size 20px
+        width 250px
+        margin 0 auto
+        transition background $time
+        &:hover
+            background-color $white
+
+
+
+
+
+
+
+
+
+
