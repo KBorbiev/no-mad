@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })();
 
+        (function() {
+            $(".main-menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        })();
+
 
         // Toggle item class
         (function() {
