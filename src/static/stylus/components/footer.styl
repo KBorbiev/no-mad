@@ -1,0 +1,78 @@
+.footer
+    background-color #af4c2f
+    color $white
+    padding 30px 0 25px 0
+    &__col
+        vertical-align top
+        &-item
+            float left
+            width 33.33%
+            padding 0 15px
+            +below($tablet)
+                width 100%
+                padding 0
+                margin-bottom 12px
+    &__title
+        font-size 20px
+        font-weight 500
+        margin-bottom 20px
+    &__desc
+        font-size 15px
+    &__contacts
+        padding-bottom 12px
+    &__link
+        display block
+        padding-left 28px
+        font-size 16px
+        position relative
+        margin-bottom 12px
+        &:hover
+            text-decoration underline
+        &::before
+            content '';
+            display block
+            position absolute
+            top 0
+            left 0
+            width 24px
+            height 24px
+            z-index 1
+        &.call
+            &::before
+                background url('../img/phone.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+        &.address
+            &::before
+                background url('../img/flags.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+        &.letter
+            &::before
+                background url('../img/massage.png') 50% no-repeat
+                background-size 100%
+                object-fit cover
+    &__form
+        // 
+    &__item
+        margin-bottom 12px
+        & input
+            +below($desktop)
+                padding 0
+    &__button
+        text-align center
+        padding-top 15px
+        +below($desktop)
+         padding-top 10px
+        & button
+            font-family 'oswald'
+            border none
+            outline 0
+            font-size 17px
+            padding 6px 40px
+            text-transform uppercase
+            background-color $white
+            transition background $time
+            cursor pointer
+            &:hover
+                background-color $yellow

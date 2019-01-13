@@ -75,6 +75,8 @@
         position relative
         height 600px
         width 100%
+        +below($tablet)
+            height 450px
         & img
             width 100%
             height 100%
@@ -93,15 +95,27 @@
         background-color rgba(248, 248, 248, 0.60)
         padding 20px 32px
         max-width 650px
+        +below($desktop)
+            left 5%
+        +below($tablet)
+            left 1%
     &__title
         font-size 32px
         font-weight 500
         text-transform uppercase
         text-decoration underline
         margin-bottom 12px
+        +below($desktop)
+            font-size 27px
+        +below($tablet)
+            font-size 23px
     &__text
         font-size 18px
         margin-bottom 6px
+        +below($desktop)
+            font-size 16px
+        +below($tablet)
+            font-size 15px
 /*!
     Стлизация Dots
 */
@@ -112,6 +126,10 @@
 
 .hero-info
     margin-bottom 80px
+    +below($desktop)
+        margin-bottom 45px
+    +below($tablet)
+        margin-bottom 25px
     &__title
         font-size 38px
         font-weight 500
@@ -119,13 +137,22 @@
         margin-bottom 12px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__description
         font-size 18px
         line-height 1.7
         text-align center
+        +below($desktop)
+            font-size 16px
 
 .our-team
     margin-bottom 50px
+    +below($tablet)
+        margin-bottom 25px
     &__title
         text-align center
         font-weight 500
@@ -133,6 +160,11 @@
         margin-bottom 25px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__list
         font-size 0
         margin 0 -10px
@@ -145,6 +177,11 @@
         position relative
         &:hover .our-team__phone-email
             left 0
+        +below($desktop)
+            width 23%
+        +below($tablet)
+            width 100%
+            margin 0 0 15px 0
     &__image
         & img
             width 100%
@@ -154,9 +191,13 @@
         padding-bottom 12px
         background-color $white
         text-align center
+        +below($tablet)
+            padding 6px 0
     &__name
         font-size 17px
         margin-bottom 6px
+        +below($tablet)
+            font-size 16px
     &__info
         text-transform uppercase
         font-size 16px
@@ -185,6 +226,8 @@
 */
 .our-video
     margin-bottom 50px
+    +below($tablet)
+        margin-bottom 25px
     &__title
         text-align center
         font-weight 500
@@ -192,8 +235,15 @@
         margin-bottom 25px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__item
         height 325px
+        +below($desktop)
+            height 190px
     &__link + span
         display none
 
@@ -202,6 +252,8 @@
 
 .our-advantages
     margin-bottom 50px
+    +below($tablet)
+        margin-bottom 25px
     &__title
         text-align center
         font-weight 500
@@ -209,17 +261,33 @@
         margin-bottom 25px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__list
         font-size 0
         margin 0 -10px
+        +below($tablet)
+            margin 0
     &__grid-item
         display inline-block
         width 24%
         margin 0 5px 12px
         vertical-align top
+        +below($desktop)
+            width 31%
+            &.delet
+                display none
+        +below($tablet)
+            width 100%
+            margin 0
     &__item
         border-bottom 1px solid
         margin-bottom 25px
+        +below($tablet)
+            margin-bottom 12px
     &__image
         text-align center
         margin-bottom 12px
@@ -261,10 +329,17 @@
         margin-bottom 25px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__list
         margin 0 -30px
         font-size 0
         text-align center
+        +below($tablet)
+            margin 0
     &__item
         display inline-block
         vertical-align top
@@ -275,6 +350,11 @@
             background #ffefc6
             box-shadow 0 4px 20px 15px #c7c7c7
             transform scale(1.02)
+        +below($desktop)
+            width 20%
+        +below($tablet)
+            width 100%
+            margin 0 0 20px 0
     &__image img
         width 100%
         display block
@@ -307,10 +387,17 @@
         margin-bottom 25px
         background-color $yellow
         padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__list
         margin 0 -30px
         font-size 0
         text-align center
+        +below($tablet)
+            margin 0
     &__item
         display inline-block
         vertical-align top
@@ -321,6 +408,11 @@
             background #ffefc6
             box-shadow 0 4px 20px 15px #c7c7c7
             transform scale(1.02)
+        +below($desktop)
+            width 45%
+        +below($tablet)
+            width 100%
+            margin 0 0 20px 0
     &__image
         & img
             width 100%
@@ -384,6 +476,8 @@
         font-size 34px
         margin-bottom 25px
         letter-spacing .5em
+        +below($desktop)
+            letter-spacing normal
     &__info
         font-size 16px
         text-align center
@@ -405,16 +499,24 @@
             background-color $white
 
 .fastivals
+    margin-bottom 50px
     &__title
         text-transform uppercase
         text-align left
         font-weight 500
         font-size 34px
         margin-bottom 25px
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
     &__list
         margin 0 -30px
         font-size 0
         text-align center
+        +below($tablet)
+            margin 0
     &__item
         position relative
         display inline-block
@@ -422,6 +524,11 @@
         max-height 400px
         margin 0 15px 12px
         width 30%
+        +below($desktop)
+            width 28%
+        +below($tablet)
+            width 100%
+            margin 0 0 20px 0
     &__image
         & img
             width 100%
@@ -441,10 +548,124 @@
         &:hover
             background-color rgba(0, 0, 0, 0.8)
 
+.experts-corner
+    margin-bottom 50px
+    +below($tablet)
+        margin-bottom 25px
+    &__title
+        text-transform uppercase
+        text-align center
+        font-weight 500
+        font-size 34px
+        margin-bottom 25px
+        background-color $yellow
+        padding 35px 0
+        +below($desktop)
+            font-size 28px
+            padding 20px 0
+        +below($tablet)
+            font-size 20px
+    &__top
+        position relative
+        margin-bottom 20px
+    &__main-link
+        font-size 20px
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        padding 10px 35px
+        background-color $yellow
+        transition background $time
+        z-index 1
+        &:hover
+            background-color $white
+    &__link
+        font-size 16px
+        position absolute
+        bottom 0
+        left 0
+        padding 12px 25px
+        background-color $yellow
+        transition background $time
+        z-index 1
+        &:hover
+            background-color $white
+    &__left
+        position relative
+        float left
+        width 50%
+    &__right
+        position relative
+        float right
+        width 50%
+    &__right
+    &__left
+        +below($tablet)
+            float none
+            width 100%
+    &__bg-full
+        min-height 350px
+        max-height 750px
+        overflow hidden
+    &__bg-full
+    &__bg-mini
+        & img
+            width 100%
+            display block
+            object-fit cover
+    &__bg-mini
+        margin 12px
 
-
-
-
-
-
-
+.instagram-media
+    margin-bottom 50px
+    &__top
+        clearfix()
+        margin-bottom 10px
+    &__title
+        font-size 20px
+        text-transform uppercase
+    &__left
+        float left
+        width 80%
+        +below($tablet)
+            width 50%
+            display none
+    &__right
+        float right
+        width 20%
+        text-align right
+        +below($tablet)
+            width 100%
+    &__link
+        font-size 15px
+        text-transform uppercase
+        padding-left 35px
+    &__instagram
+        position relative
+        &::before
+            content ''
+            position absolute
+            display block
+            top 0
+            left 0
+            height 24px
+            width 24px
+            background url('../img/instagram.png') 50% no-repeat
+            z-index 1
+    &__list
+        font-size 0
+        margin 0 -4px
+    &__item
+        display inline-block
+        width 11.11%
+        padding 0 4px
+        overflow hidden
+        +below($tablet)
+            width 25%
+        & img
+            width 100%
+            display block
+            transition transform $time
+        &:hover img
+            transform scale(1.1)

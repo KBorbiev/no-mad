@@ -1,6 +1,7 @@
 // Кнопка откр
 .humburger
     position fixed
+    display none
     top 15px
     right 15px
     width 45px
@@ -13,6 +14,8 @@
         background-color #999
         &:last-child
             margin-bottom 0
+    +below($tablet)
+        display block
 
 .mobile-overlay
     position fixed
@@ -41,7 +44,7 @@
     height 100%
     background-color #444
     color #fff
-    transition transform $timing
+    transition transform $time
     overflow-x hidden
     &.is-opened
         transform translateX(- $panel-width)
@@ -75,4 +78,4 @@
         padding 5px 0 5px 10px
     &__logo
         float left
-        width 45px
+        width 160px

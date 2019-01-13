@@ -1,2 +1,31 @@
 +b.FOOTER.footer
     +e.wrapper.wrapper
+        +e.col
+            +e.col-item
+                +e.H5.title About Us:
+                +e.P.desc
+                    | I'm Nomad offers such activities as
+                    | trekking, horseback riding, bicycle
+                    | and motorcycle tours and skiing in
+                    | winter. We customize our tours for
+                    | unforgettable adventures in the land of nomads.
+            +e.col-item
+                +e.H5.title Contacts:
+                +e.contacts
+                    +e.A(href='tel:+996777210317').link.call +996 0777 210 317
+                    +e.A(href='#').link.address I'm-Nomad Kygyzstan г. Bishkek Kaluk Akieva st.. 66
+                    +e.A(href='mailto: info@im-nomad.com').link.letter info@im-nomad.com
+                +b.social-share.inline
+                    div.ya-share2(data-bare data-size="m" data-services="facebook,twitter,whatsapp,vkontakte,odnoklassniki,telegram")
+            +e.col-item
+                +e.H5.title Contact Us!
+                +e.form
+                    form(action="#")
+                        +e.item
+                            input(type="text" name='name' required)
+                        +e.item
+                            input(type="email" name='email' required)
+                        +e.item.textarea
+                            textarea(name="massage" required)
+                        +e.button
+                            button send
